@@ -3,8 +3,6 @@ demonstrate connection pool problem with jersey 2.22.2+ and apache connection po
 
 See issue https://github.com/jersey/jersey/issues/3532
 
-issue jersey/jersey#3532
-
 ## Example
 
 This code will correctly utilize the connection pool:
