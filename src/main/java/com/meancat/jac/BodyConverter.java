@@ -37,8 +37,16 @@ public class BodyConverter<T> implements MessageBodyReader<T>, MessageBodyWriter
         return true;
     }
 
+
     @Override
     public void writeTo(T t, Class<?> aClass, Type type, Annotation[] annotations, MediaType mediaType, MultivaluedMap<String, Object> multivaluedMap, OutputStream outputStream) throws IOException, WebApplicationException {
         objectMapper.writeValue(outputStream, t);
     }
+
+    // removed in later versions of jersey
+    @Override
+    public long getSize(T t, Class<?> type, Type genericType, Annotation[] annotations, MediaType mediaType) {
+        return -1;
+    }
+
 }
