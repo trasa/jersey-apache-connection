@@ -1,0 +1,103 @@
+# Directories #
+*/out/
+/build/
+*/build/
+**/generated/
+/bin/
+*/generated
+target/
+reports/
+**/out/
+
+# Java class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# OSX
+######################
+.DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+######################
+# Eclipse
+######################
+# gitignore in subdirs (often created by Eclipse)
+**/.gitignore
+
+*.pydevproject
+.project
+.metadata
+**/bin/
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+/src/main/resources/rebel.xml
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# Maven
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+
+# Gradle
+.gradle/
+
+# IntelliJ idea
+.idea/
+*.iml
+
+# python
+*.pyc
+_trial_temp/
+
+# Nose
+sdk/python/results/
+inventory-service/src/test/python/results/
+
+# Allure
+allure-results/
+
+classes/
+.python-version
+*.txt
