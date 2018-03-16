@@ -64,12 +64,13 @@ public class App
 
         client = ClientBuilder.newClient(config);
 
-        SomeRequest request = new SomeRequest("hi there");
+        // {"storefront":"test_store","wgid":0,"language":"en","additional_data":{},"country":"US","profiles":{}}
+        SomeRequest request = new SomeRequest();
 
         LOG.debug("Run for {} iterations", appArgs.iterations);
         for (int i=0; i < appArgs.iterations; i++) {
-//            postString(appArgs.url, request);
-            postComplexObject(appArgs.url, request);
+            postString(appArgs.url, request);
+//            postComplexObject(appArgs.url, request);
             Thread.sleep(100);
         }
     }

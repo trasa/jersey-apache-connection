@@ -38,6 +38,11 @@ public class BodyConverter<T> implements MessageBodyReader<T>, MessageBodyWriter
     }
 
     @Override
+    public long getSize(T t, Class<?> type, Type genericType, Annotation[] annotations, MediaType mediaType) {
+        return -1;
+    }
+
+    @Override
     public void writeTo(T t, Class<?> aClass, Type type, Annotation[] annotations, MediaType mediaType, MultivaluedMap<String, Object> multivaluedMap, OutputStream outputStream) throws IOException, WebApplicationException {
         objectMapper.writeValue(outputStream, t);
     }
