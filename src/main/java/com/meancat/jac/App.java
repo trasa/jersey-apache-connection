@@ -77,7 +77,7 @@ public class App
 
     private static void postString(String url, SomeRequest request) {
         String response = client.target(url)
-                .request()
+                .request().acceptEncoding("identity") // doing gzip encoding seems to break connection pooling
                 .post(Entity.entity(request, MediaType.APPLICATION_JSON_TYPE), new GenericType<String>() {
                 });
 
